@@ -3,288 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shraddha Kolhapure's Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Raleway', sans-serif;
-            background-color: #333; /* Updated background color */
-            color: white; /* Updated text color */
-        }
-        header {
-            background: linear-gradient(to right, #ffcc66, #ff9933); /* Updated gradient colors */
-            color: white;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-weight: 700;
-            font-size: 36px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            font-family: 'Merriweather', serif;
-            font-weight: 400;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ff9933; /* Updated hover color */
-        }
-        section {
-            padding: 100px 20px 60px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .hero {
-            text-align: center;
-            background-color: #333; /* Updated background color */
-            color: white;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        .hero p {
-            font-size: 24px;
-            max-width: 600px;
-        }
-        .card {
-            background-color: #444; /* Updated card background color */
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Updated box shadow */
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        h2 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #ff9933; /* Updated heading color */
-        }
-        p, li {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 5px 0;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skill {
-            flex: 1 1 30%;
-            margin: 10px;
-        }
-        .skill-level {
-            background: #ddaa00; /* Updated skill bar color */
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .skill-level span {
-            display: block;
-            height: 20px;
-            background: linear-gradient(to right, #ffcc66, #ff9933); /* Updated gradient */
-        }
-        .certification-link {
-            color: #ffcc66; /* Updated certification link color */
-            text-decoration: none;
-            font-weight: 700;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #444; /* Updated footer background color */
-            color: white;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #666; /* Updated input border color */
-            border-radius: 5px;
-            background-color: #555; /* Updated input background color */
-            color: white; /* Updated input text color */
-        }
-        .contact-form button {
-            background: linear-gradient(to right, #ffcc66, #ff9933); /* Updated button gradient */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .contact-form button:hover {
-            background: linear-gradient(to right, #ff9933, #ffcc66); /* Updated hover gradient */
-        }
-    </style>
+    <title>Shraddha Kolhapure - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<header>
-    <h1>Shraddha Kolhapure</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero" id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I'm Shraddha Kolhapure, a passionate Computer Science student dedicated to coding and innovative projects.</p>
-</section>
-
-<section id="about">
-    <div class="container">
-        <div class="card">
-            <h2>About Me</h2>
-            <p>Motivated and detail-oriented software developer with strong skills in programming, web development, and database management. Proven track record of developing innovative projects and working effectively in team settings. Dedicated to continuous learning and professional growth.</p>
-            <p><strong>Education:</strong> Currently pursuing TE (CSE) at N. K. Orchid College of Engineering.</p>
-            <p><a href="https://www.linkedin.com/in/shraddha-kolhapure-214242236" target="_blank">LinkedIn</a> | <a href="https://github.com/Shraddhakolhapure" target="_blank">GitHub</a></p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="IMG_20230101_184206.jpg" alt="Shraddha Kolhapure">
+                <span>Shraddha Kolhapure</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</section>
-
-<section id="skills">
-    <div class="container">
-        <div class="card">
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>HEY, I'M SHRADDHA KOLHAPURE</h1>
+            <p>A passionate final year CSE student and quick learner, specializing in both web development and Java development.</p>
+            <a href="#projects" class="btn">PROJECTS</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a final year Computer Science Engineering student with a strong focus on creating engaging and user-friendly web applications. I have extensive experience with various technologies and frameworks, and I am always eager to learn and improve my skills.</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <div class="container">
             <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h3>Java</h3>
-                    <div class="skill-level"><span style="width: 90%;"></span></div>
+            <div class="skills-container">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">PL/SQL</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Oracle</div>
+                <div class="skill-item">Spring Boot</div>
+                <div class="skill-item">Hibernate</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-item" onclick="location.href='https://github.com/Shraddhakolhapure/Mispronunciation-Detection-System'">
+                    <h3>Mispronunciation Detection System</h3>
+                    <p>Developed a mispronunciation detection system using Python and PyTorch Lightning. Utilized deep learning models to analyze audio inputs and identify pronunciation errors in real-time.</p>
                 </div>
-                <div class="skill">
-                    <h3>Python</h3>
-                    <div class="skill-level"><span style="width: 85%;"></span></div>
+                <div class="project-item" onclick="location.href='https://github.com/Shraddhakolhapure/Voice-Assistant'">
+                    <h3>Voice Assistant</h3>
+                    <p>Developed a voice assistant application using Python that utilizes speech recognition and natural language processing. Implemented functionalities such as setting reminders, searching the web, and playing music.</p>
                 </div>
-                <div class="skill">
-                    <h3>C</h3>
-                    <div class="skill-level"><span style="width: 80%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>HTML & CSS</h3>
-                    <div class="skill-level"><span style="width: 90%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <div class="skill-level"><span style="width: 75%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>React</h3>
-                    <div class="skill-level"><span style="width: 70%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>Oracle & MySQL</h3>
-                    <div class="skill-level"><span style="width: 85%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>PL/SQL</h3>
-                    <div class="skill-level"><span style="width: 80%;"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>MongoDB</h3>
-                    <div class="skill-level"><span style="width: 75%;"></span></div>
+                <div class="project-item" onclick="location.href='https://github.com/Shraddhakolhapure/Portfolio'">
+                    <h3>Portfolio</h3>
+                    <p>Created a personal portfolio website to showcase projects and skills. Designed a responsive layout to ensure compatibility across various devices. Implemented interactive elements to enhance user engagement.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="container">
-        <div class="card">
-            <h2>Projects</h2>
-            <h3>Voice Assistant</h3>
-            <p>Developed a voice assistant application using Python, Speech Recognition, and Natural Language Processing.</p>
-            <h3>Mispronunciation Detection System</h3>
-            <p>Created a system to detect mispronunciations using deep learning models.</p>
-            <h3>Published Paper</h3>
-            <p><a href="#">Co-authored a paper on "Impact of Artificial Intelligence on Healthcare" published in a peer-reviewed journal.</a></p>
+    </section>
+    
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificates-container">
+                <div class="certificate-item">Java Spring Framework 6 with Spring Boot 3 - Udemy</div>
+                <div class="certificate-item">Full Stack Java Development - Skill Learn Up Skill Up</div>
+                <div class="certificate-item">Learn Machine Learning in 21 Days - Udemy</div>
+                <div class="certificate-item">Java for Beginners - Udemy</div>
+                <div class="certificate-item">Software Testing - certificateLink</div>
+                <div class="certificate-item">SQL (Advanced) - HackerRank</div>
+                <div class="certificate-item">SQL Crash Course - Udemy</div>
+                <div class="certificate-item">Achiever Batch in SQL, DSA, and Java - Coding Ninjas Studio</div>
+                <div class="certificate-item">Internet of Things 101 - Infosys Springboard</div>
+                <div class="certificate-item">C Programming Bootcamp - Lets Upgrade</div>
+                <div class="certificate-item">C for Beginners - Great Learning</div>
+            </div>
         </div>
-    </div>
-</section>
-
-<section id="certifications">
-    <div class="container">
-        <div class="card">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="#" class="certification-link">Certification in Machine Learning</a></li>
-                <li><a href="#" class="certification-link">Certification in Web Development</a></li>
-                <li><a href="#" class="certification-link">Certification in Java Programming</a></li>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me via the following platforms:</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/shraddha-kolhapure-214242236">LinkedIn</a></li>
+                <li><a href="https://github.com/Shraddhakolhapure">GitHub</a></li>
+                <li><a href="mailto:kolhapureshraddha8@gmail.com">Email</a></li>
             </ul>
         </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <div class="card">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shraddha Kolhapure. All rights reserved.</p>
         </div>
-    </div>
-</section>
+    </footer>
 
-<footer>
-    <p>&copy; 2024 Shraddha Kolhapure. All rights reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
