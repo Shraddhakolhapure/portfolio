@@ -7,6 +7,7 @@
     --color-text: #e0e0e0; /* Light Gray Text */
     --color-gradient1: #1f1f1f; /* Gradient Color 1 */
     --color-gradient2: #292929; /* Gradient Color 2 */
+    --color-green: #32CD32; /* Green */
 }
 
 /* Reset styles */
@@ -45,9 +46,11 @@ header .container {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    color: #32CD32;
+    font-size: 28px;
     font-weight: bold;
     animation: fadeInDown 1s ease-in-out;
+    font-family: 'Arial', sans-serif;
 }
 
 .logo img {
@@ -64,8 +67,22 @@ nav ul {
     animation: slideInRight 1s ease-in-out;
 }
 
-nav ul li a {
+nav ul li {
+    display: inline;
+}
+
+nav ul li:first-child a {
     color: var(--color-accent1);
+    font-size: 18px; /* Larger font size for shraddha */
+     
+}
+
+nav ul li:not(:first-child) a {
+    color: var(--color-accent1); /* Make other links white */
+    font-size: 18px; /* Font size for other links */
+}
+
+nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -109,7 +126,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem; /* Larger font size for hero heading */
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
@@ -163,7 +180,7 @@ section {
     margin-bottom: 20px;
 }
 
-.skill-item {
+.skill-item, .project-item, .certificate-item {
     background-color: var(--color-gradient2);
     color: var(--color-accent1);
     padding: 20px;
@@ -173,11 +190,12 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
     animation: fadeInUp 1s ease-in-out;
+    border: 2px solid var(--color-green); /* Added solid green border */
 }
 
-.skill-item:hover {
+.skill-item:hover, .project-item:hover, .certificate-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(50, 205, 50, 0.3); /* Green shadow effect */
 }
 
 .project-item {
@@ -200,11 +218,6 @@ section {
 
 .project-item p {
     font-size: 1.25rem;
-}
-
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-item a {
@@ -242,14 +255,14 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
     flex: 1 1 calc(30% - 20px);
     animation: slideInRight 1s ease-in-out;
+    border: 2px solid var(--color-green); /* Added solid green border */
 }
 
 .certificate-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(50, 205, 50, 0.3); /* Green shadow effect */
 }
 
-/* Contact Section Styles */
 .contact {
     background: linear-gradient(135deg, var(--color-gradient1), var(--color-gradient2));
     color: var(--color-accent1);
@@ -311,7 +324,6 @@ section {
     transform: scale(1.1);
 }
 
-/* Social Links Styles */
 .social-links {
     list-style: none;
     display: flex;
@@ -383,59 +395,6 @@ section {
     }
 }
 
-
-footer {
-    background-color: var(--color-base);
-    color: var(--color-accent1);
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeInUp 1s ease-in-out;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
@@ -445,4 +404,13 @@ footer {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* Additional styles based on your request */
+.skill-item, .project-item, .certificate-item {
+    box-shadow: 0 4px 8px rgba(50, 205, 50, 0.2); /* Green shadow effect */
+}
+
+.skill-item:hover, .project-item:hover, .certificate-item:hover {
+    box-shadow: 0 8px 16px rgba(50, 205, 50, 0.3); /* Increased shadow on hover */
 }
